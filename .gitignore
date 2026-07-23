@@ -1,0 +1,11 @@
+.venv/
+.env
+__pycache__/
+*.py[cod]
+.Python
+.DS_Store
+logs/
+*.log
+.ipynb_checkpoints/
+.idea/
+.vscode/
