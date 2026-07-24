@@ -27,5 +27,6 @@ Your task involves reviewing a text enclosed within triple quotes. Your responsi
 r = client.chat.completions.create(
     model=os.getenv("OLLAMA_MODEL", "llama3.2"),
     messages=[{"role": "user", "content": prompt.format(text=text)}],
+    temperature=0.7,
 )
 print(r.choices[0].message.content)
